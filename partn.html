@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IV Национальный конгресс «Дискуссионные вопросы современного акушерства»</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+
+<style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+ <script src="./js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="./js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+
+</head>
+<body>
+	<div class="header box css3-shadow" id="head"">
+ 	<div class="container">
+	  <div class="header-top">
+	    	  
+		     <div class="h_menu4"><!-- start h_menu4 -->
+
+				<a class="toggleMenu" href="#">Меню</a>
+
+				<ul class="nav">
+<li><a href="index.html">Главная</a>				
+<li><a href="#about" >Программа</a>
+<ul>
+<li><a href="program.html">Программа</a></li>
+<li><a href="expert.html">Спикеры</a></li>
+<li><a href="dates.html">Ключевые даты</a></li>
+<li><a href="org.html">Орг. и научный комитет</a></li>
+
+</ul>
+</li>
+<li><a href="#about">Участникам</a>
+<ul>
+<li><a href="gorod.html">Информация о городе</a></li>
+<li><a href="ploshadka.html">О площадке</a></li>
+<li><a href="tsena.html">Стоимость участия</a></li>
+<li><a href="http://cabinet.akusherkongress.spb.ru/">Зарегистрироваться</a></li>
+
+<li><a href="razmes.html">Размещение</a></li>
+<li><a href="torz.html">Торжественные мероприятия</a></li>
+<li><a href="nmo.html">НМО</a></li>
+
+</ul>
+</li>
+
+<li><a href="#about">Тезисы и Доклады</a>
+<ul>
+<li><a href="sroki.html">Сроки и правила оформления</a></li>
+<li><a href="tezis.html">Список утвержденных тезисов</a></li>
+<li><a href="index.html">Тезисы докладов</a></li>
+<li><a href="presa.html">Требования для презентаций</a></li>
+
+
+</ul>
+</li>
+<li><a href="#blog" class="scroll">Спонсорство</a>
+<ul>
+<li><a href="sponsor.html">Возможности для спонсоров</a></li>
+<li><a href="sp.html">Спонсоры и Экспоненты</a></li>
+<li><a href="partn.html">Информационные партнеры</a></li>
+
+</ul>
+</li>
+<li><a href="photogallery.html">Фотоальбомы</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li>
+<a href="http://cabinet.akusherkongress.spb.ru/">Личный кабинет</a>
+</li>
+
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+			</div><!-- end h_menu4 -->
+
+
+			<div class="clearfix"> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+<!--start-slider-->
+	
+		
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="./img/kongress_1300x620.jpg" />
+
+            </div>
+            <div>
+
+                <img data-u="image" src="./img/konference_14062017_1300x620.jpg" />
+                <div style="position:absolute;top:400px;right:100px;width:100px;height:1000px;z-index:0;font-size:60px;color:#E4600F;line-height:100px;"><a class="btn btn-success" href="./konf14june.html">Читать подробней</a></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+</div>
+
+
+
+
+
+      
+				<div class="clearfix"> </div>
+			
+	
+
+      
+				<div class="clearfix"> </div>
+	<!--start-services-->
+		<div id="about" class="service-section">
+
+			<div class="container">
+
+               
+               
+             
+												<p align="justify"><a href="http://www.webmed.ru/" target="_blank"><img src="./images/MedForum_Logo.jpg" style="margin-right:15px; margin-bottom:540px;" align="left" width="150"></a><b>Издательский Дом «МЕДФОРУМ», ООО</b> 
+  <br>
+ 
+  <br>
+ В Издательском доме «МЕДФОРУМ» выходят медицинские журналы: 
+  <br>
+ серия для практикующих врачей <b>"Эффективная фармакотерапия"</b> по различным медицинским специальностям: 
+  <br>
+ - акушерство и гинекология; 
+  <br>
+ - кардиология и ангиология; 
+  <br>
+ - урология; 
+  <br>
+ - эндокринология; 
+  <br>
+ - гастроэнтерология, 
+  <br>
+ - педиатрия, 
+  <br>
+ - онкология, 
+  <br>
+ - неврология и психиатрия, 
+  <br>
+ - пульмонология и оториноларингология, 
+  <br>
+ - дерматовенерология и дерматокосметология; 
+  <br>
+ - аллергология и иммунология; 
+  <br>
+ - эпидемиология и инфекции; 
+  <br>
+ - офтальмология, 
+  <br>
+ журнал <b>«Вестник семейной медицины»</b>, а также ежемесячный журнал для провизоров и фармацевтов <b>«Аптечный бизнес»</b>. 
+  <br>
+ Для широкого круга специалистов в области здравоохранения выходит новое профессиональное издание журнал <b>«Hi+Med.Высокие технологии в медицине»</b>.</p>
+ 127422, г. Москва, Ул. Тимирязевская, д.1, стр.3, 5 этаж, оф. 3518 
+<br>
+ Тел.: (495) 234-0734 
+<br>
+ E-mail: podpiska@webmed.ru, 
+<br>
+ www.webmed.ru. 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.bionika-media.ru/" target="_blank"><img src="./images/Bionika-media.png" style="margin-right:15px; margin-bottom:320px;" align="left" width="150"></a><b>«Бионика Медиа» </b> 
+  <br>
+ представляет специализированные проекты в области фармации и медицины. 
+  <br>
+ <b>Наша читательская аудитория:</b> 
+  <br>
+ - руководители фармацевтических компаний 
+  <br>
+ - практикующие врачи всех специальностей 
+  <br>
+ <b>Адресная рассылка</b> изданий осуществляется по всей территории 
+  <br>
+ Российской Федерации. 
+  <br>
+ Тиражи подтверждены Национальной тиражной службой. 
+  <br>
+ <b>«Бионика Медиа»</b> принимает активное участие в профильных выставочных мероприятиях, конгрессах, конференциях, семинарах, устанавливая прочные и долговременные отношения с читательской аудиторией. 
+  <br>
+ <b>ООО «Бионика Медиа»</b> 
+  <br>
+ <a href="http://www.bionika-media.ru/" target="_blank">www.bionika-media.ru</a> 
+  <br>
+ ООО «Бионика Медиа» 
+  <br>
+ Email: <a href="mailto:info@bionika-media.ru">info@bionika-media.ru</a> 
+  <br>
+ <a href="mailto:reklama@bionika-media.ru">reklama@bionika-media.ru</a> 
+  <br>
+ г. Москва, ул. Профсоюзная, дом 57 
+  <br>
+ Тел.: (495) 786-25-57; Факс: (495) 334-22-55</p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.recipe.by/" target="_blank"><img src="./images/prof-izd.png" style="margin-right:15px; margin-bottom:1040px;" align="left" width="150"></a><b>ПРОФЕССИОНАЛЬНЫЕ ИЗДАНИЯ, УП</b> 
+  <br>
+ 
+  <br>
+ ул. Чернышевского, 10а, офис 805, 220012, г. Минск, Беларусь 
+  <br>
+ Тел: (+375 17) 280-01-12 
+  <br>
+ Факс: (+375 17) 287-38-30 
+  <br>
+ E-mail: <a href="mailto:office@recipe.by">office@recipe.by</a> 
+  <br>
+ 
+  <br>
+ <b>Офис в Украине 
+    <br>
+   ООО «Издательский дом «Профессиональные издания»</b> 
+  <br>
+ Publishing house “Professional`nye izdaniya”, Ltd. 
+  <br>
+ пер. Чугуевский, 21, 03067, г. Киев, Украина 
+  <br>
+ Тел: +38-095-091-24-50 
+  <br>
+ E-mail: <a href="mailto:profidom@ukr.net">profidom@ukr.net</a> 
+  <br>
+ <a href="http://www.recipe.by/" target="_blank">www.recipe.by</a> 
+  <br>
+ Издательство специализируется на выпуске международных научно-практических журналов: </p>
+ 
+<ul> 
+  <li>«Лабораторная диагностика. Восточная Европа» </li>
+ 
+  <li>«Кардиология в Беларуси» </li>
+ 
+  <li>«Неврология и нейрохирургия. Восточная Европа»</li>
+ 
+  <li>«Оториноларингология. Восточная Европа»</li>
+ 
+  <li>«Офтальмология. Восточная Европа»</li>
+ 
+  <li>«Психиатрия, психотерапия и клиническая психология»</li>
+ 
+  <li>«Репродуктивное здоровье. Восточная Европа» </li>
+ 
+  <li>«Рецепт» - все о лекарствах для фармацевтов и врачей</li>
+ 
+  <li>«Хирургия. Восточная Европа»</li>
+ 
+  <li>«Экстренная медицина»</li>
+ 
+  <li>«Клиническая инфектология и паразитология»</li>
+ 
+  <li>«Педиатрия. Восточная Европа»</li>
+ 
+  <li>«Онкология. Восточная Европа»</li>
+ 
+  <li>«Инновационные технологии в медицине»</li>
+ 
+  <li>«Дерматовенерология Косметология»</li>
+ </ul>
+ и выпускает «Здоровую газету» – научно-популярное издание о новейших достижениях медицины, об актуальных проблемах отечественного и зарубежного здравоохранения, о различных заболеваниях, способах их профилактики и лечения. 
+<br>
+ На страницах журналов печатаются научные и практические материалы о диагностике, профилактике, фармацевтическом и хирургическом лечении различных заболеваний, оригинальные исследования, статьи об инновационных разработках и другие материалы. 
+<br>
+ В составе редакционных коллегий (советов) изданий ведущие специалисты Беларуси, Украины, России, других стран. Особенностью журналов является впервые внедренная на постсоветском пространстве система национальных редакционных коллегий во главе с главными редакторами, взаимодействующими на паритетной основе. Журналы рецензируемы, входят в перечни изданий, рекомендованных Высшими аттестационными комиссиями Республики Беларусь и Российской Федерации для публикации научных статей, в том числе на соискание ученых степеней кандидата и доктора медицинских наук. 
+<br>
+ Научные статьи, опубликованные в издании, засчитываются в Украине для соискания ученых степеней в соответствии с частью 1 п. 14 порядка присуждения ученых степеней и ученого звания старшего научного сотрудника, утвержденного постановлением Кабинета Министров Украины от 07.03.2007 № 423. 
+<br>
+ Электронные версии журналов размещены на сайте научной электронной библиотеки РФ <a href="http://www.elibrary.ru/" target="_blank">www.elibrary.ru</a> и в базе данных East View на сайте <a href="http://www.eastview.com/" target="_blank">www.eastview.com</a> 
+<br>
+ 
+<br>
+ Издание книжной продукции. 
+<br>
+ Разработка и проведение PR и рекламных кампаний. 
+<br>
+ Дизайн-студия – полный спектр полиграфических услуг. 
+<p></p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.t-pacient.ru/" target="_blank"><img src="./images/Logo-TP.jpg" style="margin-right:15px; margin-bottom:160px;" align="left" width="150"></a>Журнал «Трудный пациент» - это политематическое научно-практическое медицинское издание для врачей различных специальностей
+  <br>
+ Периодичность: 12 номеров в год.
+  <br>
+ Журнал «Трудный пациент» включен в Российский индекс научного цитирования <b>(РИНЦ)</b>.
+  <br>
+ Тираж политематических номеров составляет 50 000 экземпляров <b>(Тираж сертифицирован Национальной тиражной службой)</b>.
+  <br>
+ Распространение: медицинские учреждения Российской Федерации (89 регионов). Распространение осуществляется бесплатной доставкой заведующим отделений и главным врачам больниц и поликлиник, так же, журнал распространяется на крупных медицинских выставках и симпозиумах.
+  <br>
+
+  <br>
+ Адрес для корреспонденции:
+  <br>
+ Россия, 127055, г. Москва, а/я 91
+  <br>
+ Тел./факс: +7 (495) 500-61-96
+  <br>
+ e-mail: <a href="mailto:info@t-pacient.ru">info@t-pacient.ru</a>
+  <br>
+ <a href="http://www.t-pacient.ru/" target="_blank">www.t-pacient.ru</a></p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://vrachirf.ru/" target="_blank"><img src="./images/vrachi_logo.jpg" style="margin-right:15px; margin-bottom:60px;" align="left" width="150"></a>«Врачи РФ» – первая Российская система е-Дитейлинг 2.0, объединяющая более 450 тыс. профессионалов в медицине и фармацевтике с наибольшими одноименными группами в популярных соц. сетях, а также крупнейшей именной базой e-mail контактов. Сообщество «Врачи РФ» входит в состав инновационного фонда «Сколково». </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.rmj.ru/" target="_blank"><img src="./images/rmj.gif" style="margin-right:15px; margin-bottom:140px;" align="left" width="150"></a>Журнал РМЖ – независимое издание для практикующих врачей. Издается с 1995 года. Современная полная информация о диагностике и лечении заболеваний для врачей всех специальностей. Авторы статей – ведущие специалисты в своих областях. Периодичность – 40 выпусков в год. Распространяется бесплатно по России среди специалистов и медучреждений, а также по подписке в РФ и странах СНГ. Более подробная информация на нашем сайте. <a href="http://www.rmj.ru/" target="_blank">http://www.rmj.ru</a> 
+  <br>
+
+  <br>
+ ООО «ДОКТОРМЕДИА» 
+  <br>
+ Адрес: 105066, г. Москва, ул. Спартаковская, д. 16, стр.1
+  <br>
+ Тел. 8 (495) 545-09-80
+  <br>
+ </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><img src="./images/ivrach-logo.png" style="margin-right:15px; margin-bottom:120px;" align="left" width="150">Клуб практикующих врачей iVrach - это профессиональная врачебная сеть, объединяющая элиту практической медицины из ближнего и дальнего зарубежья. С 2012 года входит в международный альянс врачебных сетей Networks in Health. 
+  <br>
+ Основные задачи Клуба - способствовать профессиональному общению и повышению качества информационного обеспечения докторов. На сайте публикуется информация по безопасности лекарств, клинические разборы, в рамках «Журнального Клуба» обсуждаются научные публикации. 
+  <br>
+ Также врачам предлагается бесплатный курс изучения медицинского английского. </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><img src="./images/medego_logo.png" style="margin-right:15px;" width="150"> <a href="http://medicinarf.ru/" target="blank"><img src="./images/MEDICINARF.gif" style="margin-right:15px;" width="100"></a></p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://ktovmedicine.ru/" target="_blank"><img src="./images/kto-v-med.png" style="margin-right:15px; margin-bottom:200px;" align="left" width="150"></a><b>Кто есть Кто в медицине, Федеральный специализированный журнал</b> 
+  <br>
+ Журнал обеспечивает многосторонний диалог по вопросам реализации программ здравоохранения, развития современных медицинских технологий, совершенствования организационной деятельности, поиска эффективных инновационных решений, служит инструментом в кадровой политике, укрепляющим репутацию и стимулирующим лучших сотрудников, обеспечивающих прогресс и профессиональный успех отечественной медицины.
+  <br>
+ Читайте статьи своих коллег и присоединяйтесь к диалогу на <a href="http://ktovmedicine.ru/" target="_blank">www.ktovmedicine.ru</a>
+  <br>
+
+  <br>
+ Адрес редакции: 107023, г. Москва, пл. Журавлёва, д. 10, стр. 1
+  <br>
+ Тел./факс: (499) 704-04-24, (495) 962-12-22
+  <br>
+ E-mail: <a href="mailto:journal@kto-kto.ru">journal@kto-kto.ru
+    <br>
+   Сайт: </a><a href="http://www.kto-kto.ru/" target="_blank">www.kto-kto.ru</a> </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.medlit.ru/" target="_blank"><img src="./images/arhiv-akush-logo.jpg" style="margin-right:15px; margin-bottom:40px;" align="left" width="150"></a>Учредитель журнала: Открытое акционерное общество «Издательство «Медицина» 
+  <br>
+ Периодичность: 4 номера в год 
+  <br>
+ Подписные индексы журнала: 
+  <br>
+ каталог "Роспечать" 
+  <br>
+ - для индивидуальных подписчиков - 70646 
+  <br>
+ - для предприятий и организаций – 70648 
+  <br>
+ 
+  <br>
+ Жуpнал пpедставлен в следующих междунаpодных инфоpмационно-спpавочных изданиях: Journal Abstract (JA) of All Russian Institute for Scientific and Technical Information (VINITI ) of the Russian Academy of Sciences (Referativnyi Zhurnal of VINITI RAN), Scientific Electronic Library (<a href="http://www.elibrary.ru/" target="_blank">www.elibrary.ru</a>), Russian Index of Scientific Citationl. </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.evrika.ru/" target="_blank"><img src="./images/logo_Evrika.png" style="margin-right:15px; margin-bottom:60px;" align="left" width="150"></a>Evrika.ru – уникальный образовательно-социальный портал для врачей и специалистов сферы здравоохранения, где представлены новейшие исследования, разработки, статистические данные. 
+  <br>
+ Evrika.ru – это уютный личный кабинет доктора, в котором всегда под рукой справочник лекарств и справочная литература, журналы, инструкции Минздрава и свежая газета с новостями медицинской науки, удобный календарь событий в мире медицины, чтобы заранее планировать свой год.
+  <br>
+ Evrika.ru - это закрытый клуб, где есть возможность обсудить с коллегами сложный клинический случай или проблемы здравоохранения в целом. </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://www.medprint.ru/" target="_blank"><img src="./images/logo_PM.png" style="margin-right:15px; margin-bottom:120px;" align="left" width="150"></a>На протяжении всего периода существования издательство медицинской литературы «ПРАКТИЧЕСКАЯ МЕДИЦИНА» неизменно особое внимание уделяет качеству выпускаемых книг и журналов. 
+  <br>
+ Сотрудничая с ведущими российскими учёными, авторами практических руководств, атласов, учебников, издательство также большое внимание уделяет переводной литературе. Это позволяет сделать доступной для многих российских специалистов информацию о мировом опыте диагностики, профилактики и терапии различных заболеваний.
+  <br>
+ В 2014 году «ПРАКТИЧЕСКАЯ МЕДИЦИНА» отметила свой 10-летний юбилей. </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><a href="http://vrachivmeste.ru/" target="_blank"><img src="./images/Vrachivmeste-logo.png" style="margin-right:15px; margin-bottom:180px;" align="left" width="150"></a><b>Врачи Вместе</b> <a href="http://vrachivmeste.ru/" target="_blank">Vrachivmeste.ru</a> - профессиональная образовательная социальная сеть для врачей. Редакцией портала для ее участников на сегодняшний день подготовлено более 1000 эксклюзивных обучающих видео для врачей разных специальностей: записи докладов с конференций, видео-лекции российских и зарубежных профессоров, докторов наук, профессионалов в своей сфере, а также тематические фильмы, интервью и прочее. На портале регулярно проходят трансляции в режиме онлайн с возможностью в прямом эфире задать вопросы лекторам и общаться с коллегами! Уже сейчас портал объединяет 60 тыс. специалистов и располагает к обмену новостями, клиническими случаями, созданию своих тематических групп, поиску коллег! Присоединяйтесь к коллегам!
+  <br>
+
+  <br>
+ <b><a href="http://vrachivmeste.ru/" target="_blank">Vrachivmeste.ru</a> Более 1000 эксклюзивных медицинских видео для Вас! </b></p>
+ 
+<br clear="all">
+ 
+<p align="justify"><img src="./images/Logo_RV.jpg" style="margin-right:15px; margin-bottom:260px;" align="left" width="150">Издательский Дом «Русский Врач» создан в 1995 г. и продолжает традиции издания в России научно-практических журналов для специалистов:
+  <br>
+ <b>«Врач»</b> - ведущий медицинский журнал, предназначенный для врачей всех специальностей, ученых и преподавателей медицинских вузов.
+  <br>
+ В журнале <b>«Молекулярная медицина»</b> публикуются результаты научных исследований в таких областях, как исследование молекулярных и генетических основ этиологии и патогенеза социально значимых заболеваний с целью разработки новых методов диагностики и способов эффективной терапии заболеваний человека, в том числе на основе технологий ядерной медицины.
+  <br>
+ На страницах <b>«Фармации»</b> освещаются все вопросы, связанные с теорией и практикой современной фармацевтики, технологией изготовления лекарственных средств, получения и исследования лекарственных препаратов.
+  <br>
+ Научно-практический журнал <b>«Cпортивная медицина: наука и практика»</b> – первое в России специализированное научно-практическое издание в области спортивной медицины и антидопингового обеспечения спорта.
+  <br>
+ Научно-популярный журнал <b>«Медицинская Сестра»</b> информирует о новых направлениях в сестринской науке, образовании, международном сестринском движении, актуальных проблемах здравоохранения и медицины, эффективных подходах к оказанию медицинской помощи и уходу за больными.
+  <br>
+ <b><i>Издания входят в Научную электронную библиотеку и занимают лидирующие позиции в индексе научного цитирования.</i></b> </p>
+ 
+<br clear="all">
+ 
+<p align="justify"><img src="./images/Banner_reprod.jpg" style="margin-right:15px; margin-bottom:40px;" align="left" width="150"><b>РЕПРОДУКЦИЯ ЧЕЛОВЕКА
+    <br>
+   Human Reproduction</b>
+  <br>
+ Полномасштабные рецензированные статьи, описывающие самостоятельные исследования, клинические случаи, а также мнения и дебаты по различным темам. Публикуемые работы охватывают научные и медицинские аспекты репродуктивной физиологии и патологии, эндокринологии, андрологии, гонадной функции, гаметогенеза, оплодотворения, эмбрионального развития, беременности, генетики, генетической диагностики, онкологии, инфекционных заболеваний, хирургии, контрацепции, лечения бесплодия, психологии, этики и социальных проблем. </p>
+ 
+<br clear="all">
+
+<p align="justify"><a href="http://www.remedium.ru/" target="_blank"><img src="./images/Remedium-Group-RUS.png" style="margin-right:15px; margin-bottom:560px;" align="left" width="150"></a><b>Группа компаний «Ремедиум» </b>предоставляет весь спектр  услуг для специалистов в области медицины и фармации. За многие годы работы основными направлениями деятельности ГК «Ремедиум» стали -   выпуск специализированных периодических изданий (журналы «Ремедиум» «Российские аптеки», «Медицинский совет», «АВС»), справочной литературы, предоставление электронных баз данных, организация и проведение  мероприятий, аренда медицинских представителей, организация рекламной и PR поддержки.<br><br>
+<b>Журнал «Ремедиум»</b><br>
+Ежемесячный специализированный информационно-аналитический  журнал,  в основе концепции которого  изучение, анализ и прогнозирование развития сферы лекарственного обеспечения, фармацевтического рынка и рынка медицинской техники в России и странах СНГ. Среди авторов журнала известные ученые, организаторы здравоохранения, ведущие исследователи и аналитики.<br>
+Журнал издается c 1997 г. Выходит 12 номеров в год. Формат – А4, объем: 76-132 стр., тираж – 12 000 экземпляров.<br>
+Издание рекомендовано ВАК для публикации основных результатов диссертационных исследований. <br><br>
+<b>Журнал «Российские аптеки» </b><br>
+Популярное отраслевое издание, хорошо известное в России и странах СНГ с тиражом 27 000 экземпляров в месяц. <br>
+На страницах журнала публикуются: сообщения об изменениях законодательной базы, консультации по юридическим вопросам, рекомендации специалистов по различным аспектам административной деятельности, информация о новых перспективных разработках, а так же обзоры в помощь работникам «первого стола», цель которых сориентировать в ассортименте лекарственных средств, парафармацевтики и ИМН.<br>
+Журнал издается с 1999 года. Выходит 24 номера в год. Формат – А5+, объем – 48 стр., тираж – 13 500 экземпляров.
+<br><br>
+105082,  г. Москва, ул. Бакунинская, д.71, стр.10<br>
+тел.: (495) 780-34-25; факс: (495) 780-34-26;<br>
+<a href="mailto:remedium@remedium.ru">remedium@remedium.ru</a><br>
+<a href="http://www.remedium.ru/" target="_blank">www.remedium.ru</a><br>
+<a href="http://rosapteki.ru/" target="_blank">rosapteki.ru</a><br>
+<a href="http://www.remedium-journal.ru/" target="_blank">www.remedium-journal.ru</a>
+<br clear="all">
+</p><p align="justify"><a href="http://www.lechprof.ru/" target="_blank"><img src="./images/lech-prof-logo.png" style="margin-right:15px; margin-bottom:220px;" align="left" width="150"></a><b>«Лечение и Профилактика»:</b><br>
+научно-практический медицинский журнал для врачей, научных сотрудников, аспирантов, студентов<br>
+<b>Основная тематика:</b><br>
+Новые технологии профилактики, диагностики, лечения, организации медицинской помощи; фундаментальные исследования. Педиатрия, акушерство и  гинекология, эндокринология, внутренние и инфекционные болезни
+К каждому выпуску  издается приложение<br>
+<b>Журнал выходит</b> 4 раза в год
+<br><br>
+Адрес редакции: 125212, г. Москва, Головинское ш., д.8, стр. 2а<br>
+Тел. +7(495)2326171<br>
+<a href="http://www.lechprof.ru/" target="_blank">www.LECHPROF.RU</a>
+</p>
+<br clear="all">
+
+<br clear="all">
+<p align="justify"><a href="http://www.con-med.ru/" target="_blank"><img src="./images/Logo_MM_withe.jpg" style="margin-right:15px; margin-bottom:220px;" align="left" width="150"></a>ООО «Медицинское Маркетинговое Агентство «МедиаМедика»<br>
+Россия, 115054, г. Москва, Жуков проезд, дом 19<br>
+Тел/факс: +7(495) 926 29 83<br>
+E-mail: <a href="mailto:media@con-med.ru">media@con-med.ru</a><br>
+http: <a href="http://www.con-med.ru/" target="_blank">www.con-med.ru</a>
+<br><br>
+ООО «Медицинское Маркетинговое Агентство «МедиаМедика» выпускает периодические издания для последипломного образования врачей различных специальностей: журнал «Consilium Medicum», приложения «Consilium Medicum» - «Неврология», «Педиатрия», «Хирургия», «Гастроэнтерология», «Болезни органов дыхания», «Дерматология»;  журналы «Справочник поликлинического врача», «Системные гипертензии», «Кардиосоматика», «Гинекология», «Современная Онкология», «Психиатрия и психофармакотерапия», «Психические расстройства в общей медицине», «Справочник провизора», «Инфекции в хирургии»; газеты «Участковый терапевт», «Участковый педиатр», «Газета Невролога», «Дневник психиатра», «Кардиогазета», «ЖКТ», «Женская консультация», «Первостольник», «Dental Tribune»; а также книги, справочники и методические руководства. Все специализированные издания распространяются бесплатно. 
+</p>
+<br clear="all">
+
+<p align="justify"><img src="./images/nauch-konf.jpg" style="margin-right:15px; margin-bottom:20px;" align="left" width="150">
+</p>
+<br clear="all">
+
+<p align="justify"><img src="./images/otkr-med-kom-logo.png" style="margin-right:15px; margin-bottom:20px;" align="left" width="150">Автономная некоммерческая организация «Открытые медицинские коммуникации» - это информационный Интернет-ресурс, объединяющий специалистов в области акушерства и гинекологии, неонатологии и педиатрии. Проект принимает непосредственное участие в развитии непрерывного медицинского образования методом организации дистанционных образовательных интернет-сессий (вебинаров), циклов и модулей, в процессе которых врачи смогут проконсультироваться с ведущими специалистами данной области.
+</p>
+<br clear="all">
+
+<p align="justify"><a href="http://www.medicina-journal.ru/" target="_blank"><img src="./images/doktor-logo.png" style="margin-right:15px; margin-bottom:260px;" align="left" width="150"></a>Научно-практический медицинский рецензируемый журнал <b>«Доктор.Ру»</b><br><br>
+
+<a href="mailto:redaktor@rusmg.ru">redaktor@rusmg.ru</a><br>
+<a href="http://www.medicina-journal.ru/" target="_blank">www.medicina-journal.ru</a><br><br>
+
+Журнал «Доктор.Ру» выходит с 2002 г. Включен в Перечень ВАК по 16 тематикам.<br><br> 
+
+«Доктор.Ру» — это команда профессионалов. Журнал призван содействовать обмену профессиональной медицинской информацией и повышению квалификации работников всех звеньев системы здравоохранения.
+По вопросам подписки обращаться — <a href="mailto:buh@rusmg.ru">buh@rusmg.ru</a><br><br>
+
+Полные тексты статей доступны в электронной библиотеке eLIBRARY.<br><br>
+
+Учредитель журнала — НП «РУСМЕДИКАЛ ГРУПП».
+</p>
+<br clear="all">
+
+<p align="justify"><a href="http://perinatalpsy.ru/" target="_blank"><img src="./images/reptoductiv_big.jpg" style="margin-right:15px; margin-bottom:40px;" align="left" width="150"></a>ИНСТИТУТ ПЕРИНАТАЛЬНОЙ ПСИХОЛОГИИ И ПСИХОЛОГИИ РЕПРОДУКТИВНОЙ СФЕРЫ (ИППиПРС)<br>Институт перинатальной психологии и психологии репродуктивной сферы ведет научную, образовательную и практическую деятельность в области репродуктивной психологии. Основатели и преподаватели института являются авторами и разработчиками этого направления психологии. <br>
+Уникальные методики работы с бесплодием, невынашиванием, ВРТ и другими проблемами репродуктивной сферы разработаны в процессе практической работы и апробированы в совместной работе с врачами. 
+</p>
+<br clear="all">
+
+<p align="justify"><a href="http://www.medsovet.info/" target="_blank"><img src="./images/med-sovet-logo.png" style="margin-right:15px; margin-bottom:100px;" align="left" width="150"></a>Medsovet.info - федеральный медицинский информационный интернет-портал:
+</p><ul>
+<li>9-е место среди медицинских сайтов РФ</li>
+<li>Полная база лекарств и поиск по МНН</li>
+<li>Информация о медицинских учреждениях РФ</li>
+<li>Медицинский интернет-магазин Medsovet Market</li>
+<li>Покупка лекарств через интернет-аптеки</li>
+<li>Форум врачей и пациентов</li>
+</ul><p></p>
+ 
+<br clear="all">
+
+<p align="justify"><img src="./images/medkonf.jpg" style="margin-right:15px; margin-bottom:60px;" align="left" width="150">Сайт содержит информацию о предстоящих медицинских конференциях и выставках, а также о мероприятиях, связанных с биологией, химией и смежными науками и дисциплинами.<br>
+Ресурс создан для популяризации науки, чтобы все интересующиеся могли узнать, что сейчас происходит на ниве научных исследований и найти актуальную информацию о мероприятиях и участниках, медицинских учебных заведениях, о фармацевтических компаниях и производителях медицинской техники и изделий.
+<br clear="all">
+            </p>
+            
+		       </div>
+            
+		       </div>
+		</div>
+		
+		</div>
+			<!--/start-footer-section-->
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+						<div class="col-md-3 footer-grid">
+						<h4>Место проведения</h4>
+						<div class="border2"></div>
+						  <p>IV Национальный конгресс «Дискуссионные вопросы современного акушерства» будет проходить в залах института акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						  <p class="sub">Институт акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						</div>
+						<div class="col-md-3 footer-grid tags">
+						<img src="./images/venue.png" width="50%" >		
+						</div>
+
+					</div>
+			</div>
+		</div>
+	<!--//end-footer-section-->
+			<!--/start-copyright-section-->
+				<div class="copyright">
+					<div class="container">
+					
+					<div class="clearfix"></div>
+				</div>
+			
+			<!--//end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+			
+</body>
+</html>

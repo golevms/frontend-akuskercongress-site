@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IV Национальный конгресс «Дискуссионные вопросы современного акушерства»</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+
+<style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+ <script src="./js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="./js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+
+</head>
+<body>
+	<div class="header box css3-shadow" id="head"">
+ 	<div class="container">
+	  <div class="header-top">
+	    	  
+		     <div class="h_menu4"><!-- start h_menu4 -->
+
+				<a class="toggleMenu" href="#">Меню</a>
+
+				<ul class="nav">
+<li><a href="index.html">Главная</a>				
+<li><a href="#about" >Программа</a>
+<ul>
+<li><a href="program.html">Программа</a></li>
+<li><a href="expert.html">Спикеры</a></li>
+<li><a href="dates.html">Ключевые даты</a></li>
+<li><a href="org.html">Орг. и научный комитет</a></li>
+
+</ul>
+</li>
+<li><a href="#about">Участникам</a>
+<ul>
+<li><a href="gorod.html">Информация о городе</a></li>
+<li><a href="ploshadka.html">О площадке</a></li>
+<li><a href="tsena.html">Стоимость участия</a></li>
+<li><a href="http://cabinet.akusherkongress.spb.ru/">Зарегистрироваться</a></li>
+
+<li><a href="razmes.html">Размещение</a></li>
+<li><a href="torz.html">Торжественные мероприятия</a></li>
+<li><a href="nmo.html">НМО</a></li>
+
+</ul>
+</li>
+
+<li><a href="#about">Тезисы и Доклады</a>
+<ul>
+<li><a href="sroki.html">Сроки и правила оформления</a></li>
+<li><a href="tezis.html">Список утвержденных тезисов</a></li>
+<li><a href="index.html">Тезисы докладов</a></li>
+<li><a href="presa.html">Требования для презентаций</a></li>
+
+
+</ul>
+</li>
+<li><a href="#blog" class="scroll">Спонсорство</a>
+<ul>
+<li><a href="sponsor.html">Возможности для спонсоров</a></li>
+<li><a href="sp.html">Спонсоры и Экспоненты</a></li>
+<li><a href="partn.html">Информационные партнеры</a></li>
+
+</ul>
+</li>
+<li><a href="photogallery.html">Фотоальбомы</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li>
+<a href="http://cabinet.akusherkongress.spb.ru/">Личный кабинет</a>
+</li>
+
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+			</div><!-- end h_menu4 -->
+
+
+			<div class="clearfix"> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+<!--start-slider-->
+	
+		
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="./img/kongress_1300x620.jpg" />
+
+            </div>
+            <div>
+
+                <img data-u="image" src="./img/konference_14062017_1300x620.jpg" />
+                <div style="position:absolute;top:400px;right:100px;width:100px;height:1000px;z-index:0;font-size:60px;color:#E4600F;line-height:100px;"><a class="btn btn-success" href="./konf14june.html">Читать подробней</a></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+</div>
+
+
+
+      
+				<div class="clearfix"> </div>
+			
+	
+
+<!--//end-slider-->
+	<!--start-services-->
+		<div id="about" class="service-section">
+
+			<div class="container">
+
+               <p><b><h1 style="color:red;">Прием тезисов продлен до 25 апреля 2017 года!</h1></b></p>
+<br>
+<div class="col-md-6">
+	<p><b><h3>Дорогие коллеги!</h3> </b> </p>					
+<p align="justify">
+    &nbsp; Научно-исследовательский институт акушерства, гинекологии и репродуктологии им. Д.О. Отта вновь откроет свои двери для специалистов, посвятивших себя научной и практической работе во благо охраны здоровья матери и ребенка. В 2017 году мы будем рады приветствовать Вас на IV Национальном конгрессе «Дискуссионные вопросы современного акушерства», который пройдет с 15 июня по 17 июня 2017 года в г. Санкт-Петербурге.
+</p>
+<br>
+<p align="justify">
+    &nbsp; Ставший уже традиционным, IV Национальный конгресс «Дискуссионные вопросы современного акушерства» снова объединит фундаментальную науку, клинические исследования, достижения современной фармакологии, медицинской техники и лабораторной диагностики, организацию медицинской помощи и юридические аспекты здравоохранения в сфере акушерства и перинатологии.
+</p>
+<br>
+<p align="justify">
+    &nbsp; Освещая самые злободневные и спорные вопросы родовспоможения и перинатологии, Национальный конгресс вносит непосредственный вклад в развитие этих направлений медицины, критически важных для нашей страны.
+</p>
+<br>
+<p align="justify">
+    &nbsp; Наш конгресс, как и прежде, будет служить центром международного сотрудничества, образования и обмена мнениями между учеными и клиницистами. Тематическое разнообразие конгресса, широкий охват различных специальностей, тесно связанных с акушерством, делает его важным событием как для научных сотрудников, практикующих врачей, специалистов сестринского дела, так и для учащихся.
+</p>
+<br>
+<p align="justify"> &nbsp; Мы будем рады нашей новой встрече на IV Национальном конгрессе «Дискуссионные вопросы современного акушерства» в историческом центре Санкт-Петербурга в институте, хранящем традиции акушерского искусства и науки. </p>
+<br>
+</div>
+
+<div class="col-md-6">
+						
+    <img src="./images/ot.png" title="aylamazjan.jpg" style="margin-right:10px;" align="left" height="50%" width="100%" border="0">
+<p><strong>Президент Конгресса,&nbsp;
+    <br>
+    Председатель научного и организационного комитета Конгресса&nbsp;
+    <br>
+    Айламазян Эдуард Карпович,&nbsp;
+    <br>
+    академик РАН, з. д. н., профессор;
+    <br>
+    Директор ФГБНУ «НИИ акушерства, гинекологии и репродуктологии им. Д.О.Отта»
+    <br>
+    Президент Общества акушеров-гинекологов Санкт-Петербурга и Северо-Западного Региона РФ.
+    <div>
+        <br>
+</strong>
+</p>
+
+</div>
+</div>
+</div>
+<div id="features" class="port-section">
+			<div class="container">
+<h2>Организаторы конгресса</h2>
+				<div class="serve-grids wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+
+							<a href="http://www.rosminzdrav.ru/" target="_blank"><img src="./images/1.png" title="минздрав.png" alt="минздрав.png" ></a>	
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+							<a href="http://www.fano.gov.ru/" target="_blank"><img src="./images/2.png" title="фано.png" alt="фано.png" ></a>	
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid lost">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+							<a href="http://www.ras.ru/" target="_blank"><img src="./images/3.png" title="ран.png" alt="ран.png" ></a>	
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+					<div class="serve-grids two  wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-4 services-section-grid act">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+<a href="http://www.ott.ru/ru" target="_blank"><img src="./images/4.png" title="отта.png" alt="отта.png" ></a>								
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+							<a href="http://spbu.ru/" target="_blank"><img src="./images/5.png" title="спбгу.png" alt="спбгу.png" ></a>	
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+		<a href="http://www.zdrav.spb.ru/" target="_blank"><img src="./images/6.png" title="комитет СПб.png" alt="комитет СПб.png" ></a>						
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+<div class="serve-grids wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+
+							<a href="http://www.ncagip.ru/for-experts/roag/" target="_blank"><img src="./images/7.png" title="рос.общ.ак.гинек..png" alt="рос.общ.ак.гинек..png" ></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+<a href="http://www.ligaakusherok.ru/" target="_blank"><img src="./images/8.png" title="лига.png" alt="лига.png"></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							
+							<div class="service-icon-heading">
+							<a href="http://www.jowd.ru/" target="_blank"><img src="./images/9.png" title="журнал.png" alt="журнал.png" ></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+            
+		       </div>
+		</div>
+		
+		</div>
+			<!--/start-footer-section-->
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+						<div class="col-md-3 footer-grid">
+						<h4>Место проведения</h4>
+						<div class="border2"></div>
+						  <p>IV Национальный конгресс «Дискуссионные вопросы современного акушерства» будет проходить в залах института акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						  <p class="sub">Институт акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						</div>
+						<div class="col-md-3 footer-grid tags">
+						<img src="./images/venue.png" width="50%" >		
+						</div>
+
+					</div>
+			</div>
+		</div>
+	<!--//end-footer-section-->
+			<!--/start-copyright-section-->
+				<div class="copyright">
+					<div class="container">
+					
+					<div class="clearfix"></div>
+				</div>
+			
+			<!--//end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function(jQuery) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+			
+</body>
+</html>

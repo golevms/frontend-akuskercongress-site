@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IV Национальный конгресс «Дискуссионные вопросы современного акушерства»</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+
+<style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+ <script src="./js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="./js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+
+</head>
+<body>
+	<div class="header box css3-shadow" id="head"">
+ 	<div class="container">
+	  <div class="header-top">
+	    	  
+		     <div class="h_menu4"><!-- start h_menu4 -->
+
+				<a class="toggleMenu" href="#">Меню</a>
+
+				<ul class="nav">
+<li><a href="index.html">Главная</a>				
+<li><a href="#about" >Программа</a>
+<ul>
+<li><a href="program.html">Программа</a></li>
+<li><a href="expert.html">Спикеры</a></li>
+<li><a href="dates.html">Ключевые даты</a></li>
+<li><a href="org.html">Орг. и научный комитет</a></li>
+
+</ul>
+</li>
+<li><a href="#about">Участникам</a>
+<ul>
+<li><a href="gorod.html">Информация о городе</a></li>
+<li><a href="ploshadka.html">О площадке</a></li>
+<li><a href="tsena.html">Стоимость участия</a></li>
+<li><a href="http://cabinet.akusherkongress.spb.ru/">Зарегистрироваться</a></li>
+
+<li><a href="razmes.html">Размещение</a></li>
+<li><a href="torz.html">Торжественные мероприятия</a></li>
+<li><a href="nmo.html">НМО</a></li>
+
+</ul>
+</li>
+
+<li><a href="#about">Тезисы и Доклады</a>
+<ul>
+<li><a href="sroki.html">Сроки и правила оформления</a></li>
+<li><a href="tezis.html">Список утвержденных тезисов</a></li>
+<li><a href="index.html">Тезисы докладов</a></li>
+<li><a href="presa.html">Требования для презентаций</a></li>
+
+
+</ul>
+</li>
+<li><a href="#blog" class="scroll">Спонсорство</a>
+<ul>
+<li><a href="sponsor.html">Возможности для спонсоров</a></li>
+<li><a href="sp.html">Спонсоры и Экспоненты</a></li>
+<li><a href="partn.html">Информационные партнеры</a></li>
+
+</ul>
+</li>
+<li><a href="photogallery.html">Фотоальбомы</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li>
+<a href="http://cabinet.akusherkongress.spb.ru/">Личный кабинет</a>
+</li>
+
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+			</div><!-- end h_menu4 -->
+
+
+			<div class="clearfix"> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+<!--start-slider-->
+	
+		
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1170px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="./img/kongress_1300x620.jpg" />
+
+            </div>
+            <div>
+
+                <img data-u="image" src="./img/konference_14062017_1300x620.jpg" />
+                <div style="position:absolute;top:400px;right:100px;width:100px;height:1000px;z-index:0;font-size:60px;color:#E4600F;line-height:100px;"><a class="btn btn-success" href="./konf14june.html">Читать подробней</a></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+</div>
+
+
+
+
+
+      
+				<div class="clearfix"> </div>
+			
+	
+     
+				<div class="clearfix"> </div>
+	<!--start-services-->
+		<div id="about" class="service-section">
+
+			<div class="container">
+
+
+              
+												<ul class="nav nav-tabs"> 
+  <li class="active"><a href="#panel1" data-toggle="tab"><b>28 мая 2015</b></a></li>
+ 
+ <li><a href="#panel2" data-toggle="tab"><b>29 мая 2015</b></a></li>
+ 
+<li ><a href="#panel3" data-toggle="tab"><b>30 мая 2015</b></a></li>
+
+<li ><a href="#panel4" data-toggle="tab"><b>Выставка</b></a></li>
+ </ul>
+
+<div class="tab-content"> 
+  <div class="tab-pane fade in  active" id="panel1"> 
+    <br>
+<p><a href="./img/conf/US5_0065.jpg./" class="fancybox"><img src="./img/conf/US5_0065.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0091.jpg" class="fancybox"><img src="./img/conf/US5_0091.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0092.jpg" class="fancybox"><img src="./img/conf/US5_0092.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0101.jpg" class="fancybox"><img src="./img/conf/US5_0101.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0102.jpg" class="fancybox"><img src="./img/conf/US5_0102.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0103.jpg" class="fancybox"><img src="./img/conf/US5_0103.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0109.jpg" class="fancybox"><img src="./img/conf/US5_0109.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0110.jpg" class="fancybox"><img src="./img/conf/US5_0110.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0111.jpg" class="fancybox"><img src="./img/conf/US5_0111.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0112.jpg" class="fancybox"><img src="./img/conf/US5_0112.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0115.jpg" class="fancybox"><img src="./img/conf/US5_0115.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0126.jpg" class="fancybox"><img src="./img/conf/US5_0126.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0129.jpg" class="fancybox"><img src="./img/conf/US5_0129.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0428.jpg" class="fancybox"><img src="./img/conf/US5_0428.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0434.jpg" class="fancybox"><img src="./img/conf/US5_0434.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0440.jpg" class="fancybox"><img src="./img/conf/US5_0440.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0444.jpg" class="fancybox"><img src="./img/conf/US5_0444.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0452.jpg" class="fancybox"><img src="./img/conf/US5_0452.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0457.jpg" class="fancybox"><img src="./img/conf/US5_0457.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0473.jpg" class="fancybox"><img src="./img/conf/US5_0473.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0488.jpg" class="fancybox"><img src="./img/conf/US5_0488.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0496.jpg" class="fancybox"><img src="./img/conf/US5_0496.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0497.jpg" class="fancybox"><img src="./img/conf/US5_0497.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0538.jpg" class="fancybox"><img src="./img/conf/US5_0538.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0539.jpg" class="fancybox"><img src="./img/conf/US5_0539.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0543.jpg" class="fancybox"><img src="./img/conf/US5_0543.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0065.jpg" class="fancybox"><img src="./img/conf/US5_0065.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0091.jpg" class="fancybox"><img src="./img/conf/US5_0091.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0092.jpg" class="fancybox"><img src="./img/conf/US5_0092.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0566.jpg" class="fancybox"><img src="./img/conf/US5_0566.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0568.jpg" class="fancybox"><img src="./img/conf/US5_0568.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0580.jpg" class="fancybox"><img src="./img/conf/US5_0580.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0583.jpg" class="fancybox"><img src="./img/conf/US5_0583.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0585.jpg" class="fancybox"><img src="./img/conf/US5_0585.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0661.jpg" class="fancybox"><img src="./img/conf/US5_0661.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0699.jpg" class="fancybox"><img src="./img/conf/US5_0699.jpg" width="33,33333%"></a> </p>
+
+<p><a href="./img/conf/US5_0701.jpg" class="fancybox"><img src="./img/conf/US5_0701.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0706.jpg" class="fancybox"><img src="./img/conf/US5_0706.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0723.jpg" class="fancybox"><img src="./img/conf/US5_0723.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_0725.jpg" class="fancybox"><img src="./img/conf/US5_0725.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0744.jpg" class="fancybox"><img src="./img/conf/US5_0744.jpg" width="33,33333%"></a>
+<a href="./img/conf/US5_0751.jpg" class="fancybox"><img src="./img/conf/US5_0751.jpg" width="33,33333%"></a></p>
+
+</div>
+
+ <div class="tab-pane fade" id="#panel2"> 
+    <br>
+<p><a href="./img/conf/US5_0786.jpg" class="fancybox"><img src="./img/conf/US5_0786.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0805.jpg" class="fancybox"><img src="./img/conf/US5_0805.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0830.jpg" class="fancybox"><img src="./img/conf/US5_0830.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0836.jpg" class="fancybox"><img src="./img/conf/US5_0836.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0853.jpg" class="fancybox"><img src="./img/conf/US5_0853.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0854.jpg" class="fancybox"><img src="./img/conf/US5_0854.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0855.jpg" class="fancybox"><img src="./img/conf/US5_0855.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0857.jpg" class="fancybox"><img src="./img/conf/US5_0857.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0952.jpg" class="fancybox"><img src="./img/conf/US5_0952.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0880.jpg" class="fancybox"><img src="./img/conf/US5_0880.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0881.jpg" class="fancybox"><img src="./img/conf/US5_0881.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0901.jpg" class="fancybox"><img src="./img/conf/US5_0901.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0907.jpg" class="fancybox"><img src="./img/conf/US5_0907.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0914.jpg" class="fancybox"><img src="./img/conf/US5_0914.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0935.jpg" class="fancybox"><img src="./img/conf/US5_0935.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1002.jpg" class="fancybox"><img src="./img/conf/US5_1002.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1021.jpg" class="fancybox"><img src="./img/conf/US5_1021.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1030.jpg" class="fancybox"><img src="./img/conf/US5_1030.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1037.jpg" class="fancybox"><img src="./img/conf/US5_1037.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1045.jpg" class="fancybox"><img src="./img/conf/US5_1045.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1049.jpg" class="fancybox"><img src="./img/conf/US5_1049.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1050.jpg" class="fancybox"><img src="./img/conf/US5_1050.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1051.jpg" class="fancybox"><img src="./img/conf/US5_1051.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1052.jpg" class="fancybox"><img src="./img/conf/US5_1052.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1053.jpg" class="fancybox"><img src="./img/conf/US5_1053.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1054.jpg" class="fancybox"><img src="./img/conf/US5_1054.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1056.jpg" class="fancybox"><img src="./img/conf/US5_1056.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1060.jpg" class="fancybox"><img src="./img/conf/US5_1060.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1065.jpg" class="fancybox"><img src="./img/conf/US5_1065.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1071.jpg" class="fancybox"><img src="./img/conf/US5_1071.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1119.jpg" class="fancybox"><img src="./img/conf/US5_1119.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1121.jpg" class="fancybox"><img src="./img/conf/US5_1121.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1149.jpg" class="fancybox"><img src="./img/conf/US5_1149.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1156.jpg" class="fancybox"><img src="./img/conf/US5_1156.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1191.jpg" class="fancybox"><img src="./img/conf/US5_1191.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1196.jpg" class="fancybox"><img src="./img/conf/US5_1196.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1206.jpg" class="fancybox"><img src="./img/conf/US5_1206.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1208.jpg" class="fancybox"><img src="./img/conf/US5_1208.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1216.jpg" class="fancybox"><img src="./img/conf/US5_1216.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1222.jpg" class="fancybox"><img src="./img/conf/US5_1222.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1246.jpg" class="fancybox"><img src="./img/conf/US5_1246.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1319.jpg" class="fancybox"><img src="./img/conf/US5_1319.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1327.jpg" class="fancybox"><img src="./img/conf/US5_1327.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1332.jpg" class="fancybox"><img src="./img/conf/US5_1332.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1394.jpg" class="fancybox"><img src="./img/conf/US5_1394.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1396.jpg" class="fancybox"><img src="./img/conf/US5_1396.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1416.jpg" class="fancybox"><img src="./img/conf/US5_1416.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0879.jpg" class="fancybox"><img src="./img/conf/US5_0879.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0970.jpg" class="fancybox"><img src="./img/conf/US5_0970.jpg" width="33,33333%"></a></p>
+
+<p> <a href="./img/conf/US5_1046.jpg" class="fancybox"><img src="./img/conf/US5_1046.jpg" height="250"></a> <a href="./img/conf/US5_1047.jpg" class="fancybox"><img src="./img/conf/US5_1047.jpg" height="250"></a> <a href="./img/conf/US5_1048.jpg" class="fancybox"><img src="./img/conf/US5_1048.jpg" height="250"></a></p>
+
+
+</div>
+
+ <div class="tab-pane fade" id="panel3"> 
+    <br>
+<p><a href="./img/conf/US5_1433.jpg" class="fancybox"><img src="./img/conf/US5_1433.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1442.jpg" class="fancybox"><img src="./img/conf/US5_1442.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1452.jpg" class="fancybox"><img src="./img/conf/US5_1452.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1469.jpg" class="fancybox"><img src="./img/conf/US5_1469.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1470.jpg" class="fancybox"><img src="./img/conf/US5_1470.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1473.jpg" class="fancybox"><img src="./img/conf/US5_1473.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1475.jpg" class="fancybox"><img src="./img/conf/US5_1475.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1476.jpg" class="fancybox"><img src="./img/conf/US5_1476.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1477.jpg" class="fancybox"><img src="./img/conf/US5_1477.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1488.jpg" class="fancybox"><img src="./img/conf/US5_1488.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1489.jpg" class="fancybox"><img src="./img/conf/US5_1489.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1491.jpg" class="fancybox"><img src="./img/conf/US5_1491.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1531.jpg" class="fancybox"><img src="./img/conf/US5_1531.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1499.jpg" class="fancybox"><img src="./img/conf/US5_1499.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1502.jpg" class="fancybox"><img src="./img/conf/US5_1502.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1507.jpg" class="fancybox"><img src="./img/conf/US5_1507.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1509.jpg" class="fancybox"><img src="./img/conf/US5_1509.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1519.jpg" class="fancybox"><img src="./img/conf/US5_1519.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1555.jpg" class="fancybox"><img src="./img/conf/US5_1555.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1496.jpg" class="fancybox"><img src="./img/conf/US5_1496.jpg" width="33,33333%"></a></p>
+</div>
+
+ <div class="tab-pane fade" id="panel4"> 
+    <br>
+<p><a href="./img/conf/US5_0056.jpg" class="fancybox"><img src="./img/conf/US5_0056.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0086.jpg" class="fancybox"><img src="./img/conf/US5_0086.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0087.jpg" class="fancybox"><img src="./img/conf/US5_0087.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0088.jpg" class="fancybox"><img src="./img/conf/US5_0088.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0209.jpg" class="fancybox"><img src="./img/conf/US5_0209.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0210.jpg" class="fancybox"><img src="./img/conf/US5_0210.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0241.jpg" class="fancybox"><img src="./img/conf/US5_0241.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0288.jpg" class="fancybox"><img src="./img/conf/US5_0288.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0296.jpg" class="fancybox"><img src="./img/conf/US5_0296.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0297.jpg" class="fancybox"><img src="./img/conf/US5_0297.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0322.jpg" class="fancybox"><img src="./img/conf/US5_0322.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0324.jpg" class="fancybox"><img src="./img/conf/US5_0324.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0329.jpg" class="fancybox"><img src="./img/conf/US5_0329.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0330.jpg" class="fancybox"><img src="./img/conf/US5_0330.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0334.jpg" class="fancybox"><img src="./img/conf/US5_0334.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0335.jpg" class="fancybox"><img src="./img/conf/US5_0335.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0351.jpg" class="fancybox"><img src="./img/conf/US5_0351.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0372.jpg" class="fancybox"><img src="./img/conf/US5_0372.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0378.jpg" class="fancybox"><img src="./img/conf/US5_0378.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0386.jpg" class="fancybox"><img src="./img/conf/US5_0386.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0387.jpg" class="fancybox"><img src="./img/conf/US5_0387.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0389.jpg" class="fancybox"><img src="./img/conf/US5_0389.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0390.jpg" class="fancybox"><img src="./img/conf/US5_0390.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0391.jpg" class="fancybox"><img src="./img/conf/US5_0391.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0392.jpg" class="fancybox"><img src="./img/conf/US5_0392.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0393.jpg" class="fancybox"><img src="./img/conf/US5_0393.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0396.jpg" class="fancybox"><img src="./img/conf/US5_0396.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0397.jpg" class="fancybox"><img src="./img/conf/US5_0397.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0398.jpg" class="fancybox"><img src="./img/conf/US5_0398.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0402.jpg" class="fancybox"><img src="./img/conf/US5_0402.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0403.jpg" class="fancybox"><img src="./img/conf/US5_0403.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0406.jpg" class="fancybox"><img src="./img/conf/US5_0406.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0407.jpg" class="fancybox"><img src="./img/conf/US5_0407.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0409.jpg" class="fancybox"><img src="./img/conf/US5_0409.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0410.jpg" class="fancybox"><img src="./img/conf/US5_0410.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0412.jpg" class="fancybox"><img src="./img/conf/US5_0412.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0761.jpg" class="fancybox"><img src="./img/conf/US5_0761.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0763.jpg" class="fancybox"><img src="./img/conf/US5_0763.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0767.jpg" class="fancybox"><img src="./img/conf/US5_0767.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_0773.jpg" class="fancybox"><img src="./img/conf/US5_0773.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0774.jpg" class="fancybox"><img src="./img/conf/US5_0774.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0775.jpg" class="fancybox"><img src="./img/conf/US5_0775.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1116.jpg" class="fancybox"><img src="./img/conf/US5_1116.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1214.jpg" class="fancybox"><img src="./img/conf/US5_1214.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1237.jpg" class="fancybox"><img src="./img/conf/US5_1237.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1238.jpg" class="fancybox"><img src="./img/conf/US5_1238.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1239.jpg" class="fancybox"><img src="./img/conf/US5_1239.jpg" width="33,33333%"></a> <a href="./img/conf/US5_1240.jpg" class="fancybox"><img src="./img/conf/US5_1240.jpg" width="33,33333%"></a></p>
+
+<p><a href="./img/conf/US5_1241.jpg" class="fancybox"><img src="./img/conf/US5_1241.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0287.jpg" class="fancybox"><img src="./img/conf/US5_0287.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0370.jpg" class="fancybox"><img src="./img/conf/US5_0370.jpg" width="33,33333%"></a> <a href="./img/conf/US5_0373.jpg" class="fancybox"><img src="./img/conf/US5_0373.jpg" width="33,33333%"></a></p>
+
+</div>
+
+</div>
+  </div>          
+
+		
+		</div>
+			<!--/start-footer-section-->
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+						<div class="col-md-3 footer-grid">
+						<h4>Место проведения</h4>
+						<div class="border2"></div>
+						  <p>IV Национальный конгресс «Дискуссионные вопросы современного акушерства» будет проходить в залах института акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						  <p class="sub">Институт акушерства, гинекологии и репродуктологии им. Д.О. Отта</p>
+						</div>
+						<div class="col-md-3 footer-grid tags">
+						<img src="./images/venue.png" width="50%" >		
+						</div>
+
+					</div>
+			</div>
+		</div>
+	<!--//end-footer-section-->
+			<!--/start-copyright-section-->
+				<div class="copyright">
+					<div class="container">
+					
+					<div class="clearfix"></div>
+				</div>
+			
+			<!--//end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+			
+</body>
+</html>
